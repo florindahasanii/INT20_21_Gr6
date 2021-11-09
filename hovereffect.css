@@ -2,3 +2,12 @@ table th {
     padding-right: 250px;
     line-height: 10px;
 }
+.rreshtat{
+    font-family: none;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Architects Daughter', cursive;
+}
+table th {
+    color:rgb(219, 165, 47)
+}
