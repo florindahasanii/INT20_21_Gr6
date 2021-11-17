@@ -75,7 +75,7 @@
 #menu_lista{
     list-style-type: none;
     margin-right: 200px;
-    color:rgb(100, 55, 30)
+
 
 }
 #menu_lista li{
@@ -124,4 +124,3 @@ body, html {
     padding: 20px;
     text-align: center;
   }
- 
