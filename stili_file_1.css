@@ -24,6 +24,11 @@
     font-weight: bold;
 
 }
+.right {
+    padding-left: 60px;
+    float: right;
+    clear: right;
+}
 .carousel {
     width: 100%;
     background: rgb(216, 143, 83);
@@ -95,41 +100,6 @@
     margin: 100px;
     filter: none;
 }
-#bgimg{
-    background-image: url('bgimage.jpg') ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-body, html {
-    height: 100%;
-  }
- 
-  
-  .bg-image {
-    background-image: url("bgimage.jpg");
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .bg-text {
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
   .fa {
     padding: 20px;
     font-size: 0px;

@@ -22,9 +22,19 @@ html {
     margin-left:130px;
     margin-top: 50px;
 }
+.card1 {
+  height: 400px;
+  width: 250px;
+  margin-left:130px;
+  margin-top: 50px;
+  background-color: rgba(240, 233, 233, 0.7);
+  border-radius: 20px;
+  text-align: center;
+}
 .image {
     height: 200px;
     border-radius: 50%;
+  padding: 5px;
     
 }
   
@@ -33,7 +43,6 @@ html {
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 5px;
   }
-  
   .container::after, .row::after {
     content: "";
     clear: both;
@@ -42,6 +51,14 @@ html {
   
   .title {
     color: rgb(66, 65, 65);
+  }
+  .title1 {
+    text-align: center;
+    font-family: 'Tangerine',serif;
+    font-weight: 100;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: -5px;
   }
   
   .button {
@@ -56,10 +73,29 @@ html {
     width: 100%;
     text-decoration: none;
   }
+  .button1 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 5px;
+    margin-top: -100px;
+    color: white;
+    background-color: rgb(155, 89, 28);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+  }
   .button a{
       text-decoration: none;
   }
   .button:hover {
     background-color: rgb(175, 71, 2);
   }
+  .button1 a{
+    text-decoration: none;
+}
+.button1:hover {
+  background-color: rgb(175, 115, 74);
+}
 
