@@ -5,6 +5,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="icon" type="image" href="Images/logoja2.png">
+    <style>
+        .slidet {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <ul id="nav_bar">
@@ -16,9 +21,15 @@
     <li><a href="https://www.google.com/maps/place/11+W+Division+St,+Chicago,+IL+60610,+USA/@41.9035637,-87.6300066,17z/data=!4m5!3m4!1s0x880fd34f37d90469:0x59df594cf5512ead!8m2!3d41.9038272!4d-87.6291697">Location</a></li>
 </ul>
 <br>
-<div class="carousel">
-    <p style=" text-align:center; padding-top: 300px;"> Vendi per carousel</p>
-</div>
+
+        <div class="carousel carousel_section" style="max-width: 600px;">
+            <img class="slidet" src="Images/c1.jpeg">
+            <img class="slidet" src="Images/c2.jpeg">
+            <img class="slidet" src="Images/c3.jpg">
+            <img class="slidet" src="Images/c4.jpg">
+            <img class="slidet" src="Images/c5.jpg">
+        </div>
+
 <div class="vendi_videove">
   <table id="videot">
       <tr>
@@ -55,7 +66,10 @@
             <tr>
                 <td><a href="tel: (555) 555-1234" style="text-decoration:none; " >Tel: (555) 555-1234</a></td>
                 <td><a href="#" class="fa"><img src="Images/ig.ico" style="border-radius: 50%; height: 48px; width:48px ;"></a></td>
-                <td><input type="email" name="email" placeholder="Enter your email address" style="border-color: rgb(153, 143, 143); height: 35px; width: 400px; font-family: 'Architects Daughter', cursive;"> </td>
+                <td>
+                    <form method="get">
+                    <input type="email" name="email" placeholder="Enter your email address" style="border-color: rgb(153, 143, 143); height: 35px; width: 400px; font-family: 'Architects Daughter', cursive;"> 
+                     </form></td>
             </tr>
             <tr>
                 <td><a href="mailto: MamasLittleBakery@gmail.com" style="text-decoration:none; font-family: 'Architects Daughter', cursive;">Email:  MamasLittleBakery@gmail.com</a> </td>
@@ -67,7 +81,27 @@
 
 
 </footer>
+<script>
+//     window.alert("Check out our christmas ofers. ");
+//     if (window.confirm('Ok to Confirm, Cancel to Stay here'))
+//    {
+//    window.open('http://www.google.com', '_blank');
+//    };
 
+   var myIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slidet");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 
+</script>
 </html>
