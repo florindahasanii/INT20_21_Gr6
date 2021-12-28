@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+<link href="hovereffect.css" type="text/css" rel="stylesheet"/>
+<style>
+
+
+.svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  background-color: rgb(6, 168, 20);
+  box-shadow: 0 0 20px 20px #9ef0a8;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #e71a13;
+}
+
+.text {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+  text-align: center;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+#pozicioni {
+    padding-top: 50px;
+}
+</style>
+</head>
+<body>
+    <!-- snow effect -->
+<div class="snowflakes" ><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i>
+</i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i>
+</i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i>
+</i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i>
+</i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i>
+</i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i>
+</i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div id="pozicioni">
+    <div class="svg-wrapper">
+    <svg height="60" width="320">
+      <rect class="shape" height="60" width="320" />
+    </svg>
+     <div class="text">Holiday Gifts</div>
+  </div>
+</div>
+
+<div class="heart">
+
+</div>
+<canvas id="canvas" width="500" height="500"></canvas>
+
+</body>
+<footer>
+  
+</footer>
+<script>
+canvas = document.getElementById("canvas");
+ctx = canvas.getContext("2d")
+ctx.lineWidth = 6;
+ctx.strokeStyle = "#333";
+ctx.beginPath();
+ctx.moveTo(256, 111); // pozita startuese
+ctx.bezierCurveTo(358, 26, 446, 201, 273, 335);
+ctx.moveTo(256, 111);
+ctx.bezierCurveTo(137, 38, 99, 258, 273, 333);
+ctx.stroke();
+ctx.fillStyle = "red";
+ctx.fill();
+
+
+</script>
+
+</html>
