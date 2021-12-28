@@ -22,7 +22,7 @@
   
 </head>
 <body>
-   
+   <div class="menuja">
 <ul id="nav_bar"> 
     <li id="logoja_p"><img src="Images/logoja.jpeg" style="border-radius: 50px; width: 100px; height: 100px; margin-top: -25px; margin-right: -10px;" ></image></li>
     <li><a href="index.html" target="_blank">Home</a></li>
@@ -30,7 +30,7 @@
     <li><a href="stafi.html" target="_blank">Staff</a></li>
     <li><a href="menu.html" target="_blank">Order</a> </li>
     <li><a href="https://www.google.com/maps/place/11+W+Division+St,+Chicago,+IL+60610,+USA/@41.9035637,-87.6300066,17z/data=!4m5!3m4!1s0x880fd34f37d90469:0x59df594cf5512ead!8m2!3d41.9038272!4d-87.6291697">Location</a></li>
-</ul>
+</ul></div>
 
 <br>
 
@@ -43,15 +43,41 @@
         </div>
 
 <div class="vendi_videove">
-  <table id="videot">
-      <tr>
-          <td>Video 1</td>
-          <td>Video 2</td>
-          <td>Video 3</td>
-          <td>Video 4</td>
+    <base href="">
 
-      </tr>
-  </table>
+    <div id="carousel1">
+      <figure id="spinner">
+        <video width="300px" height="200px" autoplay muted controls loop class="videot">
+            <source src="video/vid1.mp4" type="video/mp4">
+        </video>
+        <video width="300px" height="200px" autoplay muted controls loop  class="videot">
+            <source src="video/vid2.mp4" type="video/mp4">
+        </video>
+        <video width="300px" height="200px" autoplay muted  controls loop class="videot">
+            <source src="video/vid3.mp4" type="video/mp4">
+        </video>
+        <video width="300px" height="200px" autoplay muted controls loop  class="videot">
+            <source src="video/vid4.mp4" type="video/mp4">
+        </video>
+        <video width="300px" height="200px" autoplay muted controls loop class="videot">
+            <source src="video/vid5.mp4" type="video/mp4">
+        </video>
+        <video width="300px" height="200px" autoplay muted controls loop class="videot">
+            <source src="video/vid6.mp4" type="video/mp4">
+        </video>
+      </figure>
+    <span id="stilishigj" style="float:left;" class="ss-icon" onclick="galleryspin('-')">&lt;Forward</span>
+    <span id="stilishigj" style="float:right;"  class="ss-icon" onclick="galleryspin('')">Next&gt;</span>
+
+</div>
+<script>
+    var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+</script>
 
 </div>
 
