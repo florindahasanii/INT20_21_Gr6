@@ -3,7 +3,7 @@ html {
   }
   
   *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;  /*width dhe height i nje elementi jane te kalkuluara duke i perfshire pading dhe borders */
   }
   .row{
       height: 500px;
@@ -64,7 +64,7 @@ html {
   .button {
     border: none;
     outline: 0;
-    display: inline-block;
+    display: inline-block; /* perdoret per te shfaqur nje element si nje blok inline mbrenda nje container*/
     padding: 8px;
     color: white;
     background-color: rgb(228, 130, 39);
