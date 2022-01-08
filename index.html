@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <head>
     <title>Mama's Little Bakery</title>
-    <link href="stili_file_1.css" rel="stylesheet">
+    <link rel="stylesheet" href="stili_file_1.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-1.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image" href="Images/logoja2.png">
     <style>
         .slidet {
@@ -12,25 +14,37 @@
         }
     </style>
     <script>
-    window.alert("Check out our christmas ofers. ");
-    if (window.confirm('Ok to Confirm, Cancel to Stay here'))
-   {
-   window.open('kerkesat.html', '_blank');
-   };
+//     window.alert("Check out our christmas ofers. ");
+//     if (window.confirm('Ok to Confirm, Cancel to Stay here'))
+//    {
+//    window.open('kerkesat.html', '_blank');
+//    };
 
    </script>
   
 </head>
 <body>
-   <div class="menuja">
-<ul id="nav_bar"> 
+   <!-- <div class="menuja"> -->
+<!-- <ul id="nav_bar"> 
     <li id="logoja_p"><img src="Images/logoja.jpeg" style="border-radius: 50px; width: 100px; height: 100px; margin-top: -25px; margin-right: -10px;" ></image></li>
     <li><a href="index.html" target="_blank">Home</a></li>
     <li><a href="menu.html" target="_blank">Menu</a></li>
     <li><a href="stafi.html" target="_blank">Staff</a></li>
     <li><a href="menu.html" target="_blank">Order</a> </li>
     <li><a href="https://www.google.com/maps/place/11+W+Division+St,+Chicago,+IL+60610,+USA/@41.9035637,-87.6300066,17z/data=!4m5!3m4!1s0x880fd34f37d90469:0x59df594cf5512ead!8m2!3d41.9038272!4d-87.6291697">Location</a></li>
-</ul></div>
+</ul></div> -->
+<nav class="style-1">
+   <ul>
+    <a href="index.html" id="logoja_p"><img src="Images/logoja.jpeg" style="border-radius: 50px; width: 120px; height: 120px; margin-top: -25px; float: left;" ></image></a>
+   <div style="float: right;"class="menujaa"> 
+    <a href="index.html" class="btn">Home</a>
+    <a href="menu.html" target="_blank" class="btn">Menu</a>
+    <a href="stafi.html" target="_blank" class="btn">Staff</a>
+    <a href="catering.html" target="_blank" class="btn">Catering</a>
+    <a href="menu.html" target="_blank" class="btn">Order</a>
+    <a href="https://www.google.com/maps/place/11+W+Division+St,+Chicago,+IL+60610,+USA/@41.9035637,-87.6300066,17z/data=!4m5!3m4!1s0x880fd34f37d90469:0x59df594cf5512ead!8m2!3d41.9038272!4d-87.6291697" class="btn">Location</a></div>
+   </ul> 
+</nav>
 
 <br>
 
@@ -131,7 +145,7 @@ spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-t
       myIndex++;
       if (myIndex > x.length) {myIndex = 1}    
       x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 3000); // Change image every 2 seconds
+      setTimeout(carousel, 3000); 
     }
     
     </script>

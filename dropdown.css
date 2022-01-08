@@ -1,0 +1,125 @@
+.dropdown button {
+    width: 500px;
+    height: 40px;
+    border-radius: 4px;
+    border-style: none;
+    padding: 10px;
+    background-color: #b6daeb;
+    border: 1px solid black;
+}
+.dropdown-content button{
+    width: 500px;
+    height: 30px;
+    border: none;
+}
+.dropdown-content button:hover{
+    border: 1px solid black;
+    background-color: rgb(233, 127, 66);
+    color: white;
+
+}
+body {
+  width: 100%;
+  background-color:  #e9f1f6;
+}
+#box{
+    padding: 5% 15%;
+    margin-bottom: 5%;
+    height: auto;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 3% 20%;
+  
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  
+  }
+  h3 {
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .tabcontent {
+    text-align: center;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .forma {
+    border-radius: 5px;
+    background-color:inherit;
+    text-align: left;
+  }

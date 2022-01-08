@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Catering | Mama's Little Bakery
+    </title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="Images/logoja2.png">
+    <link href="dropdown.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
+    <style>
+      h3,h4{
+    color: rgb(56, 145, 34);
+    font-family: 'Allan';
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+b {
+   font-family: 'Dekko';
+   color: rgb(49, 46, 46);
+}
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+    <div id="box">
+        <div class="tab">
+          <div class="dropdown">
+            <h3>what can we help you with?</h3>
+          <button class="tablinks" onclick="openCity(event, '')" id="defaultOpen">Chose an opption</button>
+          <div class="dropdown-content">
+          <button class="tablinks" onclick="openCity(event, 'questions')">questions and comments</button>
+          <button class="tablinks" onclick="openCity(event, 'catering')">catering</button>
+          <button class="tablinks" onclick="openCity(event, 'donation')">donation requests</button>
+          <button class="tablinks" onclick="openCity(event, 'catering_menu')">catering menu</button>
+        </div>    
+        </div>
+        
+        <div id="questions" class="tabcontent">
+          <div class="forma">
+            <form action="" method="get">
+              <label for="fname">first name*</label>
+              <input type="text" id="fname" name="firstname" placeholder="" required>
+          
+              <label for="lname">last name*</label>
+              <input type="text" id="lname" name="lastname" placeholder=""  required>
+          
+              <label for="subject">subject*</label>
+              <input type="text" id="fname" name="subject" placeholder=""  required>
+            
+               <label for="message">message*</label>
+              <input type="text" id="fname" name="message" placeholder=""  required style="height:250px;">
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        
+        <div id="catering" class="tabcontent">
+          <div class="forma">
+            <form action="" method="get">
+              <label for="fname">first name*</label>
+              <input type="text" id="fname" name="firstname" placeholder="" required>
+              <label for="email">email*</label>
+              <input type="email" id="email" name="email"><br>
+              <label for="phone">phone number*</label>
+          <input type="tel" id="phone" name="phone" placeholder="(___)-___-___" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+          <label for="date">date*</label>
+          <input type="date" id="date" name="date">
+          <label for="number">number of guests*</label><br>
+        
+          <input type="number" id="number" name="number"
+                 min="10" max="200">
+        
+                 <label for="location">location*</label><br>
+                 <input type="radio" id="kosove" name="location" value="Kosove">
+                 <label for="kosove">Kosove</label><br>
+                 <input type="radio" id="shqiperi" name="location" value="Shqiperi">
+                 <label for="shqiperi">Shqiperi</label><br>
+                 <input type="radio" id="maqedoni" name="location" value="Maqedoni">
+                 <label for="maqedoni">Maqedoni</label><br><br>
+        
+                 <label for="subject">subject*</label>
+                 <input type="text" id="fname" name="subject" placeholder=""  required>
+               
+                  <label for="message">message*</label>
+                 <input type="text" id="fname" name="message" placeholder=""  required style="height:250px;">
+        
+                 <input type="submit" value="Submit">
+              </form>
+              </div>
+        
+        
+        
+          </div>
+        
+          <div id="donation" class="tabcontent" class="ndryshime" >
+          <div class="forma">
+            <form action="" method="get">
+            <label for="fname">company name*</label>
+            <input type="text" id="fname" name="companyname" placeholder="" required>
+             <label for="fname">primary contact*</label>
+            <input type="text" id="fname" name="primaryname" placeholder="" required> 
+            <label for="email">email*</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone">phone number*</label>
+            <input type="tel" id="phone" name="phone" placeholder="(___)-___-___" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+            <label for="message">describe your request*</label>
+            <input type="text" id="fname" name="message" placeholder=""  required style="height:250px;">
+            <input type="submit" value="Submit">
+            </form></div>
+          </div>
+        
+          <div id="catering_menu" class="tabcontent">
+          <div class="forma">
+            <h3>download catering menu</h3>
+            <p style="text-align: center;"><a href="#" style="text-decoration: none;">catering_menu_winter_2021</a></p>
+            <p  style="text-align: center;">*Items are based on current availability. Menu is subject to change throughout the season.</p></div>
+          </div>
+          
+          </div>
+        
+
+
+
+    </body>
+
+
+
+
+
+
+
+      
+      

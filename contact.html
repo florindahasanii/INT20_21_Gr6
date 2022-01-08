@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+
+  <link href="dropdown.css" rel="stylesheet">
+  <link rel="stylesheet" href="style-1.css">
+  <link rel="stylesheet" href="stili_file_1.css">
+
+
+</head>
+<body>
+  <nav class="style-1">
+    <ul>
+    <div style="float: right; font-size: 28px; padding: 18px 20px; background-color: white;opacity: 0.7; width: 108%;"class="menujaa"> 
+      <a href="index.html" target="_blank" class="btn"style="margin-left: 4.8%;">Home</a>
+     <a href="menu.html" class="btn">Menu</a>
+     <a href="stafi.html" target="_blank" class="btn">Staff</a>
+     <a href="catering.html" target="_blank" class="btn">Catering</a>
+     <a href="menu.html" target="_blank" class="btn">Order</a>
+     <a href="https://www.google.com/maps/place/11+W+Division+St,+Chicago,+IL+60610,+USA/@41.9035637,-87.6300066,17z/data=!4m5!3m4!1s0x880fd34f37d90469:0x59df594cf5512ead!8m2!3d41.9038272!4d-87.6291697" class="btn" style="margin-right: 1%;">Location</a></div>
+    </ul> 
+  </nav>
+
+
+<div id="box">
+<div class="tab">
+  <div class="dropdown">
+    <h3>what can we help you with?</h3>
+  <button class="tablinks" onclick="openCity(event, '')" id="defaultOpen">Chose an opption</button>
+  <div class="dropdown-content">
+  <button class="tablinks" onclick="openCity(event, 'questions')">questions and comments</button>
+  <button class="tablinks" onclick="openCity(event, 'catering')">catering</button>
+  <button class="tablinks" onclick="openCity(event, 'donation')">donation requests</button>
+  <button class="tablinks" onclick="openCity(event, 'catering_menu')">catering menu</button>
+</div>    
+</div>
+
+<div id="questions" class="tabcontent">
+  <div class="forma">
+    <form action="" method="get">
+      <label for="fname">first name*</label>
+      <input type="text" id="fname" name="firstname" placeholder="" required>
+  
+      <label for="lname">last name*</label>
+      <input type="text" id="lname" name="lastname" placeholder=""  required>
+  
+      <label for="subject">subject*</label>
+      <input type="text" id="fname" name="subject" placeholder=""  required>
+    
+       <label for="message">message*</label>
+      <input type="text" id="fname" name="message" placeholder=""  required style="height:250px;">
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+<div id="catering" class="tabcontent">
+  <div class="forma">
+    <form action="" method="get">
+      <label for="fname">first name*</label>
+      <input type="text" id="fname" name="firstname" placeholder="" required>
+      <label for="email">email*</label>
+      <input type="email" id="email" name="email"><br>
+      <label for="phone">phone number*</label>
+  <input type="tel" id="phone" name="phone" placeholder="(___)-___-___" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+  <label for="date">date*</label>
+  <input type="date" id="date" name="date">
+  <label for="number">number of guests*</label><br>
+
+  <input type="number" id="number" name="number"
+         min="10" max="200">
+
+         <label for="location">location*</label><br>
+         <input type="radio" id="kosove" name="location" value="Kosove">
+         <label for="kosove">Kosove</label><br>
+         <input type="radio" id="shqiperi" name="location" value="Shqiperi">
+         <label for="shqiperi">Shqiperi</label><br>
+         <input type="radio" id="maqedoni" name="location" value="Maqedoni">
+         <label for="maqedoni">Maqedoni</label><br><br>
+
+         <label for="subject">subject*</label>
+         <input type="text" id="fname" name="subject" placeholder=""  required>
+       
+          <label for="message">message*</label>
+         <input type="text" id="fname" name="message" placeholder=""  required style="height:250px;">
+
+         <input type="submit" value="Submit">
+      </form>
+      </div>
+
+
+
+  </div>
+
+  <div id="donation" class="tabcontent" class="ndryshime" >
+  <div class="forma">
+    <form action="" method="get">
+    <label for="fname">company name*</label>
+    <input type="text" id="fname" name="companyname" placeholder="" required>
+     <label for="fname">primary contact*</label>
+    <input type="text" id="fname" name="primaryname" placeholder="" required> 
+    <label for="email">email*</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="phone">phone number*</label>
+    <input type="tel" id="phone" name="phone" placeholder="(___)-___-___" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br>
+    <label for="message">describe your request*</label>
+    <input type="text" id="fname" name="message" placeholder=""  required style="height:250px;">
+    <input type="submit" value="Submit">
+    </form></div>
+  </div>
+
+  <div id="catering_menu" class="tabcontent">
+  <div class="forma">
+    <h3 style="text-align: left;">download catering menu</h3>
+    <p ><a href="#" style="text-decoration: none;">catering_menu_winter_2021</a></p>
+    <p  >*Items are based on current availability. Menu is subject to change throughout the season.</p></div>
+  </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+      
+</body>
+<footer>
+  <table id="foteri">
+          <tr>
+          <td>Contact</td> 
+          <td>Social Media</td>
+          <td>Want to hear from us: </td>
+          </tr>
+          <tr>
+              <td><a href="https://www.google.com/maps/place/11+W+Division+St,+Chicago,+IL+60610,+USA/@41.9035637,-87.6300066,17z/data=!4m5!3m4!1s0x880fd34f37d90469:0x59df594cf5512ead!8m2!3d41.9038272!4d-87.6291697" style="text-decoration: none;">Address: Chicago, IL 60610, United States</a></td>
+              <td><a href="#" class="fa"><img src="Images/fb.png" style="border-radius: 50%;"></a></td>
+              <td>Be the first to hear about new items, events and announcements.</td>
+          </tr>
+          <tr>
+              <td><a href="tel: (555) 555-1234" style="text-decoration:none; " >Tel: (555) 555-1234</a></td>
+              <td><a href="#" class="fa"><img src="Images/ig.ico" style="border-radius: 50%; height: 48px; width:48px ;"></a></td>
+              <td>
+                  <form method="get">
+                  <input type="email" name="email" placeholder="Enter your email address" style="border-color: rgb(153, 143, 143); height: 35px; width: 400px; font-family: 'Architects Daughter', cursive;"> 
+                   </form></td>
+          </tr>
+          <tr>
+              <td><a href="mailto: MamasLittleBakery@gmail.com" style="text-decoration:none; font-family: 'Architects Daughter', cursive;">Email:  MamasLittleBakery@gmail.com</a> </td>
+              <td><a href="#" class="fa"><img src="Images/tw.png" style="border-radius: 50%;"></a></td>
+              <td><button type="submit" style="width: 150px; height: 35px; margin-right: 253px; font-family: 'Architects Daughter', cursive;">Subscribe</button></td>
+          </tr>
+          
+  </table>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
