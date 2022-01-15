@@ -1,0 +1,37 @@
+* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(200,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(200,50,21,6);
+}
+.style-1 {
+	text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+}
+.menujaa{
+  width: 85%;
+  padding:18px 20px;
+  letter-spacing:2px;
+  margin-bottom: 45px;
+    
+}
+.btn{
+
+  color:rgba(0, 0, 0);
+  padding:10px 20px;
+  text-decoration:none;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin: 40px;
+}
+.menu2{
+  margin-bottom: 5%;
+}
+.btn:hover{
+  border:none;
+  color:rgb(221, 155, 101);
+  padding:20px 20px; 
+  background:#1b1b1b;
+}
