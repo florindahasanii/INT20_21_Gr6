@@ -8,10 +8,79 @@
     <link rel="stylesheet" href="style-1.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image" href="Images/logoja2.png">
+
     <style>
-        .slidet {
-            display: none;
-        }
+       /* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  padding: 0% 0%;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 10px 100%;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(219, 173, 114);
+  opacity: 0.6;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+table td {
+  padding: 10px 30px;
+}
     </style>
     <script>
 //     window.alert("Check out our christmas ofers. ");
@@ -21,7 +90,9 @@
 //    };
 
    </script>
-  
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
    <!-- <div class="menuja"> -->
@@ -48,14 +119,59 @@
 
 <br>
 
-        <div class="carousel carousel_section" style="max-width: 600px;">
-            <img class="slidet" src="Images/c1.jpeg">
-            <img class="slidet" src="Images/c2.jpeg">
-            <img class="slidet" src="Images/c3.jpg">
-            <img class="slidet" src="Images/c4.jpg">
-            <img class="slidet" src="Images/c5.jpg">
-        </div>
+<div class="slideshow-container">
 
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/c1.jpeg" style="width: 1500px ;height: 600px;">
+      <div class="text">make life sweeter... eat a dessert first!</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/c2.jpeg" style="width: 1500px ;height: 600px;">
+      <div class="text">enjoy life, eat cake</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images/c3.jpg" style="width: 1500px ;height: 600px;">
+      <div class="text">let them eat cake</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    
+    </script>
+
+<br>
 <div class="vendi_videove">
     <base href="">
 
@@ -95,9 +211,142 @@ spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-t
 
 </div>
 
-<div id="gift" >
-    <div id="gift_box1"><p>Gift box 1</p></div>
-    <div id="gift_box2"><p>Gift box 2</p></div>
+<div style="height: 260px; width: 100%; padding-bottom: 10%;">
+
+
+  <table>
+    <tr>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b1.webp" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b2.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b3.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b4.jpeg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b5.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b6.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b7.png" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b8.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b9.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+    </tr>
+  
+    <tr id="tablarreth">
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b10.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b11.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b12.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b13.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b14.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b15.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b16.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b17.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+      <td>
+        <div class="col-lg-6 order-lg-2">
+     <div class="img-wrapper p-5 text-center bg-info">
+        <img src="Images/b18.jpg" class="img-fluid"  style="width: 100px; height:100px; border-radius: 50%;" />    </div>
+  </div> </td>
+  
+    </tr>
+  
+    <script>
+  
+      $(document).ready(function()
+    {
+        $(".img-wrapper").find("img").css("transition", "transform 500ms ease-in-out");
+    
+        $(".img-wrapper").hover(    
+            // Handler for mouseenter
+            function()
+            {
+                $(this).find("img").css("transform", "scale(1.5)");
+            },
+            // Handler for mouseleave
+            function()
+            {
+                $(this).find("img").css("transform", "scale(1)");
+            }
+        );
+    });
+    </script> 
+  
+  
+  
+  </table>
+  
+
 </div>
 
 </body>
