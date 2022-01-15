@@ -5,8 +5,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <link href="style-1.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="style-1.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+    
     <link rel="icon" type="image" href="Images/logoja2.png">
 
     <style>
@@ -90,6 +91,7 @@ table td {
 //    };
 
    </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -348,6 +350,87 @@ spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-t
   
 
 </div>
+
+<div class="hide1" style="box-sizing:content-box;">
+ <p style="text-align: center; color: rgb(228, 115, 115);"class="hide"> Do you want to hide this article below? Click me.</p> 
+    <img src="Images/side.jpg" style="width: 800px; height: 500px; float: left; padding: 2% 6%; " />
+    <div style="padding: 2% 5%; line-height: 30px;">
+    <h3> WHO WE ARE</h3>
+    <p> 
+    A thoughtful expression of modern craft.
+    Mama's Little Bakery began with a mission: bring bread with an old-soul into the lives of our friends and family in California.
+    </p></div><br>
+    <div id="example" style=" margin: 5px 0pt; padding: 5px;"></div>
+<form>
+    <div><textarea class="example-default-value" id="example-textarea" style="width: 400px; height: 50px;">Type some text in here to be appended</textarea></div>
+    <div><input type="button" value="Append" onclick="example_append()" /></div>
+</form>
+<script language="javascript">
+$('.example-default-value').each(function( ) {
+    var default_value = this.value;
+    $(this).focus(function() {
+        if(this.value == default_value) {
+            this.value = '';
+        }
+    });
+    $(this).blur(function() {
+        if(this.value == '') {
+            this.value = default_value;
+        }
+    });
+});
+function example_append() {
+    $('#example' ).append($('#example-textarea').val()+ "<br />");
+}
+</script>
+
+
+
+
+</div>
+<script>
+$(document).ready(function(){
+  $(".hide").click(function(){
+    $(".hide1").hide("slow", function(){
+      alert("The article is now hidden");
+    });
+  });
+});
+  </script>
+<div style="height: 500px ; box-sizing:content-box;">
+
+  <div style="padding: 5% 5%;float: left; line-height: 30px;">
+    <img src="Images/side1.jpg" style="width: 800px; height: 500px; float: right; padding: 2% 6%; " />
+    <h3>OUR PARTNER</h3>
+    <p> 
+     
+      Coffee Manufactory
+      Customers at Mama's Little Bakery came to us for the highest quality bread and pastry, and now we can confidently say our coffee program matches. Together we are building Coffee Manufactory. Developed with the same commitment towards sustainable sourcing and farming relationships we have with our grain partners.
+      
+      We want to bring customers closer to farms, farms closer to roasters, roasters closer to baristas, and back again. Back to the roots of simple beans, great farming friendships, and precise roasting. Back to being good, balanced, clean.
+    </p>
+  
+    </div>
+    <div style="height: 500px ; box-sizing:content-box;">
+
+      <div style="padding: 5% 5%;float: right; line-height: 30px;">
+        <img src="Images/side2.jpg" style="width: 600px; height: 500px; float: left; padding: 2% 6%; " />
+        <h3>Mama's Little Bakery at home</h3>
+        <p>
+          In 2010 we published Mama's Little Bakery Book. The baking community was in shock that we would share our secret to the iconic Mama's Little Country Loaf. For us, the magic is in the endless thought and experimentation that goes into making each loaf; learning to push the boundaries of what we do, so more people can enjoy it.
+        </p>
+      
+        </div>
+    
+    
+
+</div>
+
+
+
+
+
+
 
 </body>
 
